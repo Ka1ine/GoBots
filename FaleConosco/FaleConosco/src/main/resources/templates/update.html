@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alterar Duvida</title>
+    </head>
+    <body>
+        <p >Alterar Duvida</p>
+        <form action = "/duvida/update" method="POST">
+            <label for="telefone">telefone:</label>
+            <input type="text" id="telefone" name="telefone"><br><br>
+
+            <label for="id">Id:</label>
+            <input type="text" id="id" name="id"><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"/><br>
+        </form>
+        <a href="/duvida/duvidaLista"><button>Lista de Duvidas</button></a>
+    </body>
+</html>

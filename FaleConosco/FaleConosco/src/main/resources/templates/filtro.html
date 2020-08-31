@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Filtro Duvida</title>
+    </head>
+    <body>
+        <p >Escolha a telefone para buscar seu Duvida:</p>
+        <form action = "/duvida/filtro" method="get">
+            <label for="telefone">telefone:</label>
+            <input type="text" id="telefone" name="telefone"><br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"/><br>
+        </form>
+        <a href="/duvida/duvidaLista"><button>Lista de Duvidas</button></a>
+    </body>
+</html>

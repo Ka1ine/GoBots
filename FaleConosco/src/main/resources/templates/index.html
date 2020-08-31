@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Novo Duvida</title>
+    </head>
+    <body>
+        <p >Novo Duvida</p>
+        <form action = "/duvida/insere" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email"><br><br><br>
+
+            <label for="topico">topico:</label>
+            <input type="text" id="topico" name="topico"><br><br><br>
+
+            <label for="mensagem">mensagem:</label>
+            <input type="text" id="mensagem" name="mensagem"><br><br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"><br>
+        </form>
+        <a href="/duvida/duvidaLista"><button>Lista de duvidas</button></a>
+    </body>
+</html>

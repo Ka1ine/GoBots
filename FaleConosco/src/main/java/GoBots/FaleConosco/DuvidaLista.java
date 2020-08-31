@@ -6,8 +6,8 @@ public class DuvidaLista {
         for(Duvida duvida : lista) {
             html = html + "<h1>" +
             duvida.getNome() + "</h1>" +
-            duvida.getTelefone() + "<br>" +
             duvida.getEmail() + "<br>" +
+            duvida.getTopico() + "<br>" +
             duvida.getMensagem() + "<br>" + "<br>";
         }
         return html;

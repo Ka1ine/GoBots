@@ -22,16 +22,16 @@ public class DuvidaController {
         return "index";
     }
 
-    //Inserir
+    //INSERIR
     @PostMapping(path="/insere") 
-    public @ResponseBody String addNewDuvida(@RequestParam String nome, @RequestParam Integer telefone, @RequestParam String email, @RequestParam String mensagem) {
+    public @ResponseBody String addNewDuvida(@RequestParam String nome, @RequestParam String email, @RequestParam String topico, @RequestParam String mensagem) {
         Duvida duvida = new Duvida();
         duvida.setNome(nome);
-        duvida.setTelefone(telefone);
         duvida.setEmail(email);
+        duvida.setTopico(topico);
         duvida.setMensagem(mensagem);
         duvidaRepository.save(duvida);
-        return nome + " " + telefone + " "+ email + " " + mensagem;
+        return nome + " " + email + " " + topico + " " + mensagem;
     } 
 
     @GetMapping(path="/duvidaLista")
@@ -42,8 +42,8 @@ public class DuvidaController {
     
     //FILTRAR
     @GetMapping(path="/filtro")
-    public @ResponseBody String getDuvida(@RequestParam Integer telefone) {
-        Iterable<Duvida> resultado = duvidaRepository.findDuvida(telefone);
+    public @ResponseBody String getDuvida(@RequestParam String topico) {
+        Iterable<Duvida> resultado = duvidaRepository.findDuvida(topico);
         return duvidalista.listaDuvida(resultado);
     } 
 
@@ -59,12 +59,12 @@ public class DuvidaController {
     } 
 
     @PostMapping(path="/update")
-    public @ResponseBody String updateDuvida(@RequestParam Integer telefone, @RequestParam Integer id) {
+    public @ResponseBody String updateDuvida(@RequestParam String mensagem, @RequestParam Integer id) {
         duvidaRepository.findById(id);
         Optional<Duvida> o = duvidaRepository.findById(id);
         if(o.isPresent()){
             Duvida duvida = o.get();
-            duvida.setTelefone(telefone);
+            duvida.setMensagem(mensagem);
             duvidaRepository.save(duvida);
         }
         return "updateResposta";

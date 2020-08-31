@@ -12,8 +12,8 @@ public class Duvida {
     
     private Integer id;
     String nome;
-    Integer telefone;
     String email;
+    String topico;
     String mensagem;
 
     //GETS E SETS
@@ -33,14 +33,6 @@ public class Duvida {
         return this.nome;
     }
 
-    //Telefone
-    public void setTelefone(Integer telefone){
-        this.telefone = telefone;
-    }
-    public Integer getTelefone(){
-        return this.telefone;
-    }
-
     //Email
     public void setEmail(String email){
         this.email = email;
@@ -49,6 +41,14 @@ public class Duvida {
         return this.email;
     }
     
+    //Topico
+    public void setTopico(String topico){
+        this.topico = topico;
+    }
+    public String getTopico(){
+        return this.topico;
+    }
+
     //Mensagem
     public void setMensagem(String mensagem){
         this.mensagem = mensagem;

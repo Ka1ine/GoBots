@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Filtro Duvida</title>
+    </head>
+    <body>
+        <p >Escolha a topico para buscar seu Duvida:</p>
+        <form action = "/duvida/filtro" method="get">
+            <label for="topico">topico:</label>
+            <input type="text" id="topico" name="topico"><br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"/><br>
+        </form>
+        <a href="/duvida/duvidaLista"><button>Lista de Duvidas</button></a>
+    </body>
+</html>

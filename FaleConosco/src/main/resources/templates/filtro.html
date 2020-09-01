@@ -3,8 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>Filtro Duvida</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav>
+            <a href="/"><img class="nav_logo" src="/imagens/gobots.png"></a>
+            <ul>
+                <li><a href="/duvida/"><button class="btn"> Nova dúvida</button></a></li>
+                <li><a href="/duvida/filtroForm"><button class="btn">Procurar</button></a></li>
+                <li><a href="/duvida/deleteForm"><button class="btn">Apagar</button></a></li>
+                <li><a href="/duvida/updateForm"><button class="btn">Atualizar</button></a></li>
+            </ul>
+        </nav>
+
         <p >Escolha a topico para buscar seu Duvida:</p>
         <form action = "/duvida/filtro" method="get">
             <label for="topico">topico:</label>

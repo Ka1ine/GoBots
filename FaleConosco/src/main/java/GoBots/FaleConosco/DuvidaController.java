@@ -19,7 +19,7 @@ public class DuvidaController {
 
     @GetMapping("/")
     public String duvidaForm() {
-        return "index";
+        return "insere";
     }
 
     //INSERIR

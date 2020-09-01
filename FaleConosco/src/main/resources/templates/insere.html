@@ -5,7 +5,6 @@
         <title>Novo Duvida</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/CSS/style.css">
-        <link rel="stylesheet" type="text/css" href="/CSS/home.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -19,11 +18,23 @@
             </ul>
         </nav>
 
-        <div class="texto">
-            <p class="titulo">Fale conosco</p>
-            <p>O Fórum de Dúvidas é um espaço feito para que todxs possam interagir na resolução de dúvidas! Nele, você pode postar quantas dúvidas quiser e em qualquer horário! Use o Fórum de Dúvidas à vontade porque nós sabemos que pergunta não tem hora pra chegar 😃</p>
-            <a href=""><button class="btn btn_index">Quero fazer uma pergunta :)</button></a>
-        </div>
+        <p>Novo Duvida</p>
+        <form action = "/duvida/insere" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="Nome" required><br><br>
 
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required placeholder="seuemail@gmail.com"><br><br><br>
+
+            <label for="topico">topico:</label>
+            <input type="text" id="topico" name="topico" required><br><br><br>
+
+            <label for="mensagem">mensagem:</label>
+            <input type="text" id="mensagem" name="mensagem" required><br><br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"><br>
+        </form>
+        <a href="/duvida/duvidaLista"><button>Lista de duvidas</button></a>
     </body>
 </html>

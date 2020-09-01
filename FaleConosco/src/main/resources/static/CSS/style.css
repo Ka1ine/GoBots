@@ -1,0 +1,52 @@
+/*CSS geral para todas as páginas*/
+
+/*--------------NavBar--------------*/
+nav{
+	width: auto;
+	height: 126.250px;
+	background-color: #4054B2;
+}
+
+.nav_logo{
+	height: 156.250px;
+	width: 221px;
+	position: sticky;
+	padding-bottom: 20px;
+	margin-left: 100px;
+}
+
+nav ul{
+	display: inline;
+	margin-left: 400px;
+}
+
+nav ul li{
+	display: inline;
+}
+
+/*-------------Botões--------------*/
+.btn{
+	background-color: #4054B2;
+	font-family: 'Poppins', sans-serif;;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	border-radius: 100px;
+	transition-duration: 0.4s;
+}
+
+.btn:hover {
+	background-color: white; 
+	color: #4054B2;
+}
+
+/*----------Imagem de fundo----------*/
+body{
+	background-image: url(/imagens/fundo.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: -170px;
+	background-size: 100%;
+}
+

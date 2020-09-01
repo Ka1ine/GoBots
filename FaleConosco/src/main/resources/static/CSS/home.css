@@ -1,0 +1,21 @@
+
+.titulo{
+	font-size: 59px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	padding-bottom: 30px;
+}
+
+.texto{
+	width: 40%;
+	text-align: justify;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+.btn_index{
+	background-color: #6EC1E4;
+	font-weight: 550;
+}

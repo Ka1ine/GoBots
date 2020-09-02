@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta charset=UTF-8>
-        <title>Novo Duvida</title>
+        <title>Nova Dúvida</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="/CSS/insere.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -17,24 +18,29 @@
                 <li><a href="/duvida/updateForm"><button class="btn">Atualizar</button></a></li>
             </ul>
         </nav>
-
-        <p>Novo Duvida</p>
         <form action = "/duvida/insere" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="Nome" required><br><br>
-
-            <label for="email">email:</label>
-            <input type="email" id="email" name="email" required placeholder="seuemail@gmail.com"><br><br><br>
-
-            <label for="topico">topico:</label>
-            <input type="text" id="topico" name="topico" required><br><br><br>
-
-            <label for="mensagem">mensagem:</label>
-            <input type="text" id="mensagem" name="mensagem" required><br><br><br>
-            
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar"><br>
+            <p class="titulo">Nova Dúvida</p>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nomeHelp">
+                <small id="nomeHelp">Seu nome completo</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="topico">Tópico</label>
+                <input type="text" class="form-control" id="topico" name="topico" placeholder="Digite tudo em maiúsculo">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Digite aqui sua dúvida :)</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="2"></textarea>
+            </div>
+            <div class="botoes">
+                <input class="btn btn-primary btn-botao" type="submit" value="Enviar">
+            </div>
         </form>
-        <a href="/duvida/duvidaLista"><button>Lista de duvidas</button></a>
+        <a href="/duvida/duvidaLista"><button class="btn btn-outline-light btn-lista">Lista de dúvidas</button></a>
     </body>
 </html>

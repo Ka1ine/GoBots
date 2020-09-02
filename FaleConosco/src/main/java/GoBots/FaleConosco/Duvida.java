@@ -11,10 +11,10 @@ public class Duvida {
     @GeneratedValue(strategy=GenerationType.AUTO)
     
     private Integer id;
-    String nome;
-    String email;
-    String topico;
-    String mensagem;
+    private String nome;
+    private String email;
+    private String topico;
+    private String mensagem;
 
     //GETS E SETS
     //ID

@@ -1,0 +1,38 @@
+#id{
+	border-radius: 100px;
+	background-color: #ffffffef;
+}
+
+#mensagem{
+	border-radius: 30px;
+	background-color: #ffffffef;
+}
+
+form{
+	width: 42%;
+	padding-left: 150px;
+	padding-top: 110px;
+	color: white;
+}
+
+.titulo{
+	font-size: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+} 
+
+#nomeHelp{
+	color: rgb(187, 187, 187);
+}
+
+.btn-botao{
+	width: 100px;
+}
+
+.botoes{
+	padding-bottom: 15px;
+}
+
+
+
+

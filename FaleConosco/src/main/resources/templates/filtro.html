@@ -12,23 +12,23 @@
         <nav>
             <a href="/"><img class="nav_logo" src="/imagens/gobots.png"></a>
             <ul>
-                <li><a href="/duvida/"><button class="btn"> Nova dúvida</button></a></li>
-                <li><a href="/duvida/filtroForm"><button class="btn">Procurar</button></a></li>
-                <li><a href="/duvida/deleteForm"><button class="btn">Apagar</button></a></li>
-                <li><a href="/duvida/updateForm"><button class="btn">Atualizar</button></a></li>
+                <li><a href="/mensagem/"><button class="btn"> Nova Mensagem</button></a></li>
+                <li><a href="/mensagem/filtroForm"><button class="btn">Procurar</button></a></li>
+                <li><a href="/mensagem/deleteForm"><button class="btn">Apagar</button></a></li>
+                <li><a href="/mensagem/updateForm"><button class="btn">Atualizar</button></a></li>
             </ul>
         </nav>
-        <form action = "/duvida/filtro" method="get">
-            <p class="titulo">Buscar dúvida</p>
+        <form action = "/mensagem/filtro" method="get">
+            <p class="titulo">Buscar Mensagem</p>
             <div class="form-group">
-                <label for="topico">Qual o tópico da sua dúvida?</label>
-                <input type="text" class="form-control" id="topico" name="topico" aria-describedby="topicoHelp">
-                <small id="topicoHelp">Digite tudo em maiúsculo</small>
+                <label for="nome">Qual seu nome?</label>
+                <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nomeHelp">
+                <small id="nomeHelp">Digite seu nome completo</small>
             </div>
             <div class="botoes">
                 <input class="btn btn-primary btn-botao" type="submit" value="Enviar">
             </div> 
         </form>
-        <a href="/duvida/duvidaLista"><button class="btn btn-outline-light btn-lista">Lista de dúvidas</button></a>
+        <a href="/mensagem/mensagemLista"><button class="btn btn-outline-light btn-lista">Lista de Mensagem</button></a>
     </body>
 </html>

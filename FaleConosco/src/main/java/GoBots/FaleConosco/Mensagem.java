@@ -6,15 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity 
-public class Duvida {
+public class Mensagem {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     
     private Integer id;
     private String nome;
-    private String email;
-    private String topico;
-    private String mensagem;
+    private String mensagemEnviada;
+    private String mensagemTratada;
 
     //GETS E SETS
     //ID
@@ -24,7 +23,7 @@ public class Duvida {
     public Integer getId(){
         return this.id;
     }
-
+    
     //Nome
     public void setNome(String nome){
         this.nome = nome;
@@ -33,27 +32,19 @@ public class Duvida {
         return this.nome;
     }
 
-    //Email
-    public void setEmail(String email){
-        this.email = email;
+    //Mensagem
+    public void setMensagemEnviada(String mensagemEnviada){
+        this.mensagemEnviada = mensagemEnviada;
     }
-    public String getEmail(){
-        return this.email;
-    }
-    
-    //Topico
-    public void setTopico(String topico){
-        this.topico = topico;
-    }
-    public String getTopico(){
-        return this.topico;
+    public String getMensagemEnviada(){
+        return this.mensagemEnviada;
     }
 
-    //Mensagem
-    public void setMensagem(String mensagem){
-        this.mensagem = mensagem;
+    //MensagemTratada
+    public void setMensagemTratada(String mensagemTratada){
+        this.mensagemTratada = mensagemTratada;
     }
-    public String getMensagem(){
-        return this.mensagem;
+    public String getMensagemTratada(){
+        return this.mensagemTratada;
     }
 }

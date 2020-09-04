@@ -12,35 +12,26 @@
         <nav>
             <a href="/"><img class="nav_logo" src="/imagens/gobots.png"></a>
             <ul>
-                <li><a href="/duvida/"><button class="btn"> Nova dúvida</button></a></li>
-                <li><a href="/duvida/filtroForm"><button class="btn">Procurar</button></a></li>
-                <li><a href="/duvida/deleteForm"><button class="btn">Apagar</button></a></li>
-                <li><a href="/duvida/updateForm"><button class="btn">Atualizar</button></a></li>
+                <li><a href="/mensagem/"><button class="btn"> Nova Mensagem</button></a></li>
+                <li><a href="/mensagem/filtroForm"><button class="btn">Procurar</button></a></li>
+                <li><a href="/mensagem/deleteForm"><button class="btn">Apagar</button></a></li>
+                <li><a href="/mensagem/updateForm"><button class="btn">Atualizar</button></a></li>
             </ul>
         </nav>
-        <form action = "/duvida/insere" method="post">
-            <p class="titulo">Nova Dúvida</p>
+        <form action = "/mensagem/insere" method="post">
+            <p class="titulo">Nova Mensagem</p>
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nomeHelp">
-                <small id="nomeHelp">Seu nome completo</small>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome completo">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@gmail.com">
-            </div>
-            <div class="form-group">
-                <label for="topico">Tópico</label>
-                <input type="text" class="form-control" id="topico" name="topico" placeholder="Digite tudo em maiúsculo">
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Digite aqui sua dúvida :)</label>
-                <textarea class="form-control" id="mensagem" name="mensagem" rows="2"></textarea>
+                <label for="mensagemEnviada">Digite aqui sua mensagem :)</label>
+                <textarea class="form-control" id="mensagemEnviada" name="mensagemEnviada" rows="2"></textarea>
             </div>
             <div class="botoes">
                 <input class="btn btn-primary btn-botao" type="submit" value="Enviar">
             </div>
         </form>
-        <a href="/duvida/duvidaLista"><button class="btn btn-outline-light btn-lista">Lista de dúvidas</button></a>
+        <a href="/mensagem/mensagemLista"><button class="btn btn-outline-light btn-lista">Lista de Mensagem</button></a>
     </body>
 </html>

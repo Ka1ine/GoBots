@@ -1,7 +1,4 @@
-
-#nome, 
-#email, 
-#topico{
+#nome{
 	border-radius: 100px;
 	background-color: #ffffffef;
 }
@@ -28,6 +25,7 @@ form{
 	color: rgb(187, 187, 187);
 }
 
+/*------------botoes-------------*/
 .btn-botao{
 	width: 100px;
 }

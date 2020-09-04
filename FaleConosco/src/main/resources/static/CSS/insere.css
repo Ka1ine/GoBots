@@ -1,11 +1,9 @@
-#nome, 
-#email, 
-#topico{
+#nome{
 	border-radius: 100px;
 	background-color: #ffffffef;
 }
 
-#mensagem{
+#mensagemEnviada{
 	border-radius: 30px;
 	background-color: #ffffffef;
 }

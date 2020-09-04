@@ -12,23 +12,23 @@
         <nav>
             <a href="/"><img class="nav_logo" src="/imagens/gobots.png"></a>
             <ul>
-                <li><a href="/duvida/"><button class="btn"> Nova dúvida</button></a></li>
-                <li><a href="/duvida/filtroForm"><button class="btn">Procurar</button></a></li>
-                <li><a href="/duvida/deleteForm"><button class="btn">Apagar</button></a></li>
-                <li><a href="/duvida/updateForm"><button class="btn">Atualizar</button></a></li>
+                <li><a href="/mensagem/"><button class="btn"> Nova Mensagem</button></a></li>
+                <li><a href="/mensagem/filtroForm"><button class="btn">Procurar</button></a></li>
+                <li><a href="/mensagem/deleteForm"><button class="btn">Apagar</button></a></li>
+                <li><a href="/mensagem/updateForm"><button class="btn">Atualizar</button></a></li>
             </ul>
         </nav>
-        <form action = "/duvida/delete" method="POST">
-            <p class="titulo">Apagar dúvida</p>
+        <form action = "/mensagem/delete" method="POST">
+            <p class="titulo">Apagar Mensagem</p>
             <div class="form-group">
-                <label for="id">Qual dúvida vôce deseja apagar?</label>
+                <label for="id">Qual mensagem vôce deseja apagar?</label>
                 <input type="text" class="form-control" id="id" name="id" aria-describedby="deleteHelp">
-                <small id="deleteHelp">Digite apenas o número da dúvida. Ex: 1</small>
+                <small id="deleteHelp">Digite apenas o número da mensagem. Ex: 1</small>
             </div>
             <div class="botoes">
                 <input class="btn btn-primary btn-botao" type="submit" value="Enviar">  
             </div> 
         </form>
-        <a href="/duvida/duvidaLista"><button class="btn btn-outline-light btn-lista">Lista de dúvidas</button></a>
+        <a href="/mensagem/mensagemLista"><button class="btn btn-outline-light btn-lista">Lista de Mensagem</button></a>
     </body>
 </html>

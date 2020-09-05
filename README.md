@@ -21,17 +21,20 @@ Um serviço que aceita chamadas RESTful, tendo um endpoint que recebe uma string
 3. Procurar mensagem - Recebe o nome completo e exibe na tela as mensagens enviadas por essa pessoa.
 4. Apagar mensagem - Recebe o número de identificação da mensagem (ID) para apagá-la do banco de dados; (Para encontrar o número de identificação basta clicar na lista de mensagem).
 5. Atualizar mensagem - Recebe o número de identificação da mensagem (ID) e a mensagem atualizada. (Essas modificações vão todas para o banco de dados).
-**OBS:** A mensagem traduzida só é exibida assim que enviar na funcionalidade 2.
+- **OBS:** A mensagem traduzida só é exibida assim que enviar na funcionalidade 2.
 
 ### FRONT-END
-Framework - Bootstrap para auxiliar na construção dos formulários; 
-Biblioteca - Google fonts para usar nas fontes do projeto;
+Framework - Bootstrap para auxiliar na construção dos formulários.
+>
+Biblioteca - Google fonts para usar nas fontes do projeto.
 
 ----------------------------
 #### CONSIDERAÇÕES FINAIS
 Muito obrigado pela oportunidade :)
+>
 Desenvolver esse projeto foi um desafio mas acima de tudo uma grande oportunidade de aprender diversas coisas.
 
 #### AUTOR
 Yasmin Kaline de Carvalho  Silva
+>
 yasminkaline73@gmail.com

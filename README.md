@@ -4,15 +4,15 @@
 Um serviço que aceita chamadas RESTful, tendo um endpoint que recebe uma string de texto e retorna uma string com termos da Internetês "traduzidos" para uma escrita mais formal, sendo possível apagar, procurar e mudar as mensagens.
 
 ### INSTALAÇÃO
-> - Instale Visual Studio Code e MySQL;
-> - Necessário baixar o aquivo () para inserir no MySQL;
-> - Criar um SCHEMA no MySQL com o nome gobots;
-> - Clicar com o botão direito em cima do SCHEMA;Apertar na opção Table Data Import Wizard; 
-> - Importar o arquivo baixado anteriormente;
-> - Abrir esse projeto no Visual Studio Code;
-> - Subir o servidor local usando `./mvnw spring-boot:run `;
-> - Digite em seu navegador: `localhost:8080` para iniciar o uso do projeto; 
-> - Agora, para que haja a "tradução" das palavras basta digitar alguma contida no banco de dados;
+- Instale Visual Studio Code e MySQL;
+- Necessário baixar o aquivo () para inserir no MySQL;
+- Criar um SCHEMA no MySQL com o nome gobots;
+- Clicar com o botão direito em cima do SCHEMA;Apertar na opção Table Data Import Wizard; 
+- Importar o arquivo baixado anteriormente;
+- Abrir esse projeto no Visual Studio Code;
+- Subir o servidor local usando `./mvnw spring-boot:run `;
+- Digite em seu navegador: `localhost:8080` para iniciar o uso do projeto; 
+- Agora, para que haja a "tradução" das palavras basta digitar alguma contida no banco de dados;
 
 ### FUNCIONALIDADES 
 

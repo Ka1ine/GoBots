@@ -16,11 +16,11 @@ Um serviço que aceita chamadas RESTful, tendo um endpoint que recebe uma string
 
 ### FUNCIONALIDADES 
 
-1. Página inicial - Uma página home simples com navbar para acessar as outras funcionalidades.
-2. Nova mensagem - Funcionalidade principal do projeto, recebe nome e mensagem e exibe ambos sendo a mensagem tratada no banco de dados. Caso haja o termo da Internetês no banco de dados a mensagem será exibida de uma forma "traduzida".
-3. Procurar mensagem - Recebe o nome completo e exibe na tela as mensagens enviadas por essa pessoa.
-4. Apagar mensagem - Recebe o número de identificação da mensagem (ID) para apagá-la do banco de dados; (Para encontrar o número de identificação basta clicar na lista de mensagem).
-5. Atualizar mensagem - Recebe o número de identificação da mensagem (ID) e a mensagem atualizada. (Essas modificações vão todas para o banco de dados).
+1. Página inicial - Uma página home simples com navbar para acessar as outras funcionalidades.(/)
+2. Nova mensagem - Funcionalidade principal do projeto, recebe nome e mensagem e exibe ambos sendo a mensagem tratada no banco de dados. Caso haja o termo da Internetês no banco de dados a mensagem será exibida de uma forma "traduzida".(/mensagem/)
+3. Procurar mensagem - Recebe o nome completo e exibe na tela as mensagens enviadas por essa pessoa.(/mensagem/filtroForm)
+4. Apagar mensagem - Recebe o número de identificação da mensagem (ID) para apagá-la do banco de dados; (Para encontrar o número de identificação basta clicar na lista de mensagem).(/mensagem/deleteForm)
+5. Atualizar mensagem - Recebe o número de identificação da mensagem (ID) e a mensagem atualizada. (Essas modificações vão todas para o banco de dados).(/mensagem/updateForm)
 - **OBS:** A mensagem traduzida só é exibida assim que enviar na funcionalidade 2.
 
 ### FRONT-END

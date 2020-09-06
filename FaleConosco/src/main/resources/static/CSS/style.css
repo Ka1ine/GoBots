@@ -41,6 +41,35 @@ nav ul li{
 	color: #4054B2;
 }
 
+.btn-lista{
+	margin-left: 150px;
+}
+
+.btn-botao{
+	width: 100px;
+}
+
+.botoes{
+	padding-bottom: 15px;
+}
+
+.btn_novaMensagem{
+	background-color: white;
+	font-family: 'Poppins', sans-serif;;
+	color: #4054B2;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	border-radius: 100px;
+	transition-duration: 0.4s;
+}
+
+.btn_novaMensagem:hover {
+	background-color: #4054B2; 
+	color: white;
+	border-color: white;
+}
+
 /*----------Imagem de fundo----------*/
 body{
 	background-image: url(/imagens/fundo.png);
@@ -50,8 +79,18 @@ body{
 	background-size: 100%;
 }
 
-.btn-lista{
-	margin-left: 150px;
+/*----------Formulario geral-----------*/
+form{
+	width: 42%;
+	padding-left: 150px;
+	padding-top: 110px;
+	color: white;
 }
 
+/*----------Titulo geral-----------*/
+.titulo{
+	font-size: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+} 
 

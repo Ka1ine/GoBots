@@ -1,4 +1,5 @@
-.titulo{
+/*CSS para a página home*/
+.titulo_home{
 	font-size: 59px;
 	font-weight: 600;
 	font-family: 'Poppins', sans-serif;
@@ -14,6 +15,7 @@
 	margin-top: 100px;
 }
 
+/*----------Botao------------*/
 .btn_index{
 	background-color: #6EC1E4;
 	font-weight: 550;

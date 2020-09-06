@@ -22,38 +22,51 @@ public class MensagemController {
         return "insere";
     }
 
-    //INSERIR
+    /**
+     * Recebe o nome e a mensagem enviada
+     * Trata essa mensagem no banco de dados e devolve a mensagem tratada
+     */
     @PostMapping(path="/insere") 
     public @ResponseBody String addNewMensagem(@RequestParam String nome, @RequestParam String mensagemEnviada) {
         Mensagem mensagem = new Mensagem();
         mensagem.setNome(nome);
         mensagem.setMensagemEnviada(mensagemEnviada);
-        /*mensagem.setMensagemTratada(getMensagemTratada(mensagemEnviada));*/
         mensagemRepository.save(mensagem);
-        return nome + "<br> " + getMensagemTratada(mensagemEnviada);
+        return "<div style=\"font-size:25px; display: inline-block; padding-left: 450px; color: #4054B2; padding-top: 200px;\"><p><b>Nome: </b>" + nome + "</p>"+
+        "<b>Sua mensagem</b>" + getMensagemTratada(mensagemEnviada) + "</div>";
     } 
-
+    /**
+     * Busca a mensagem eviada no banco de dados 
+     */
     public String getMensagemTratada(String mensagemEnviada){
         Iterable<String> mensagem = mensagemRepository.findTraducao(mensagemEnviada);
         String traduzida = mensagem.toString();
+        /**
+         * Retira os "[]" da mensagem
+         * Retorna a mensagem tratada caso tenha no banco de dados
+         */
         traduzida = traduzida.substring(1, traduzida.length()-1);
-
-        if(traduzida.isEmpty()){
-            return mensagemEnviada;
+        if(traduzida.isEmpty()) {
+            return "<b>: </b>" + mensagemEnviada;
         }   
         else {
-            return traduzida;
+            return " <b>tratada: </b>" + traduzida;
         }
     }
 
-    //Lista Completa das mensagem tratadas
+    /**
+     * Pega todos as mensagem enviadas no banco de dados
+     * OBS: essas mensagens são exibidas na tela sem serem tratadas
+     */
     @GetMapping(path="/mensagemLista")
     public @ResponseBody String getAllMensagem() {
         Iterable<Mensagem>resultado = mensagemRepository.findAll();
         return mensagemlista.listaMensagem(resultado);
     }
     
-    //FILTRAR
+    /**
+     * Filtra todas as mensagens pelo nome 
+     */
     @GetMapping(path="/filtro")
     public @ResponseBody String getMensagem(@RequestParam String nome) {
         Iterable<Mensagem> resultado = mensagemRepository.findMensagem(nome);
@@ -65,12 +78,9 @@ public class MensagemController {
         return "filtro";
     } 
 
-    //FAZER UPDATE
-    @GetMapping(path="/updateForm")
-    public String updateForm() {
-        return "update";
-    } 
-
+    /**
+     * Update das mensagens pelo ID 
+     */
     @PostMapping(path="/update")
     public @ResponseBody String updateMensagem(@RequestParam String mensagemEnviada, @RequestParam Integer id) {
         mensagemRepository.findById(id);
@@ -80,18 +90,25 @@ public class MensagemController {
             mensagem.setMensagemEnviada(mensagemEnviada);
             mensagemRepository.save(mensagem);
         }
-        return "updateResposta";
-    } 
-    
-    //DELETAR
-    @GetMapping(path="/deleteForm")
-    public String deleteForm() {
-        return "delete";
+        return "<div style=\"font-size:40px; display: inline-block; padding-left: 390px; padding-top: 200px; font-family: 'Poppins', sans-serif; color: #4054B2;\"> Sua mensagem foi atualizada :) </div>";
     } 
 
+    @GetMapping(path="/updateForm")
+    public String updateForm() {
+        return "update";
+    }
+
+    /**
+     * Deleta as mensagens pelo ID
+     */
     @PostMapping(path="/delete")
     public @ResponseBody String deleteMensagem(@RequestParam Integer id) {
         mensagemRepository.deleteById(id);
-        return "updateResposta";
+        return "<div style=\"font-size:40px; display: inline-block; padding-left: 420px; padding-top: 200px; font-family: 'Poppins', sans-serif; color: #4054B2;\"> Sua mensagem foi deletada :) </div>" ;
     } 
+
+    @GetMapping(path="/deleteForm")
+    public String deleteForm() {
+        return "delete";
+    }
 }

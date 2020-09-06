@@ -1,3 +1,6 @@
+/**
+ * Filtra e trata as mensagens
+ */
 package GoBots.FaleConosco;
 
 import org.springframework.data.jpa.repository.Query;

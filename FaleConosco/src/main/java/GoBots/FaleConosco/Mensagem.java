@@ -13,10 +13,12 @@ public class Mensagem {
     private Integer id;
     private String nome;
     private String mensagemEnviada;
-    private String mensagemTratada;
+    
+    /**
+     * Criação de Getters e Setters
+     */
 
-    //GETS E SETS
-    //ID
+    /*ID*/
     public void setId(Integer id){
         this.id = id;
     }
@@ -24,7 +26,7 @@ public class Mensagem {
         return this.id;
     }
     
-    //Nome
+    /*NOME*/
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -32,19 +34,11 @@ public class Mensagem {
         return this.nome;
     }
 
-    //Mensagem
+    /*Mensagem*/
     public void setMensagemEnviada(String mensagemEnviada){
         this.mensagemEnviada = mensagemEnviada;
     }
     public String getMensagemEnviada(){
         return this.mensagemEnviada;
-    }
-
-    //MensagemTratada
-    public void setMensagemTratada(String mensagemTratada){
-        this.mensagemTratada = mensagemTratada;
-    }
-    public String getMensagemTratada(){
-        return this.mensagemTratada;
     }
 }

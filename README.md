@@ -10,6 +10,8 @@ Um serviço que aceita chamadas RESTful, tendo um endpoint que recebe uma string
 - Apertar na opção Table Data Import Wizard; 
 - Importar o arquivo baixado anteriormente;
 - Abrir esse projeto no Visual Studio Code;
+- Para utilizar o banco de dados basta clicar em src - main - resources - application.properties;
+- Colocar seu username e senha do MySQL;
 - Subir o servidor local usando `./mvnw spring-boot:run `;
 - Digite em seu navegador: `localhost:8080` para iniciar o uso do projeto; 
 - Agora, para que haja a "tradução" das palavras basta digitar alguma contida no banco de dados;

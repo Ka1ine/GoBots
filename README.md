@@ -32,7 +32,7 @@ Biblioteca - Google fonts para usar nas fontes do projeto.
 
 ----------------------------
 #### CONSIDERAÇÕES FINAIS
-Desenvolver esse projeto foi uma experiência incrível e muito desafiador mas acima de tudo foi uma grande oportunidade de aprender diversas coisas.
+Desenvolver esse projeto foi uma experiência incrível e desafiador mas acima de tudo foi uma grande oportunidade de aprender diversas coisas.
 >
 Muito obrigada pela oportunidade :)
 

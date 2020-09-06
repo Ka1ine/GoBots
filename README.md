@@ -5,7 +5,7 @@ Um serviço que aceita chamadas RESTful, tendo um endpoint que recebe uma string
 
 ### INSTALAÇÃO
 - Instale Visual Studio Code e MySQL;
-- Necessário baixar o aquivo ([Banco de dados](https://github.com/Ka1ine/GoBots/blob/master/gobots.csv)) para inserir no MySQL. Caso haja problema vou deixar outro link para baixar ([Banco de dados](https://docs.google.com/spreadsheets/d/1ToMbZGrRzlv3CZDxSa0AoDLpaPJKvKFW3t-cHzBYBpY/edit?usp=sharing)). Se utilizar a segunda opção basta clicar no link, clicar em aquivo - fazer download - Valores separados por vírgula(.csv, página atual) - baixar esse arquivo com o nome gobots;
+- Necessário baixar o aquivo ([Banco de dados](https://github.com/Ka1ine/GoBots/blob/master/gobots.csv)) com o nome gobots para inserir no MySQL. Caso haja problema com o primeiro link vou diponibilizar outro ([Banco de dados](https://docs.google.com/spreadsheets/d/1ToMbZGrRzlv3CZDxSa0AoDLpaPJKvKFW3t-cHzBYBpY/edit?usp=sharing)). Se utilizar a segunda opção basta acessar o link, clicar em aquivo - fazer download - Valores separados por vírgula(.csv, página atual) - baixar esse arquivo com o nome gobots;
 - Clicar com o botão direito em cima do SCHEMA;Apertar na opção Table Data Import Wizard; 
 - Importar o arquivo baixado anteriormente;
 - Abrir esse projeto no Visual Studio Code;
